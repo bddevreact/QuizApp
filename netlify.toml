@@ -2,8 +2,8 @@
   # Base directory (if needed)
   base = "."
   
-  # Build command - use npm install and then build
-  command = "npm install && npm run build"
+  # Build command - use npx vite build directly
+  command = "npm install && npx vite build"
   
   # Directory to publish
   publish = "dist"
