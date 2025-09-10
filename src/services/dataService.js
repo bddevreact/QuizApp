@@ -48,6 +48,14 @@ class DataService {
         // New user, create in Firebase
         const newUserData = {
           ...userData,
+          // Telegram specific data
+          telegramId: userData.telegramId,
+          telegramUsername: userData.username,
+          telegramFullName: userData.fullName,
+          telegramPhotoUrl: userData.photoUrl,
+          telegramLanguageCode: userData.languageCode,
+          telegramIsPremium: userData.isPremium,
+          // App data
           totalEarned: 0,
           totalDeposited: 0,
           totalWithdrawn: 0,
@@ -116,6 +124,14 @@ class DataService {
           username: "External User",
           fullName: "External User",
           userType: "external",
+          // Telegram specific data (for external users, use default values)
+          telegramId: null,
+          telegramUsername: null,
+          telegramFullName: "External User",
+          telegramPhotoUrl: null,
+          telegramLanguageCode: "en",
+          telegramIsPremium: false,
+          // App data
           totalEarned: 1250.00,
           totalDeposited: 500.00,
           totalWithdrawn: 200.00,
@@ -170,6 +186,14 @@ class DataService {
           username: "External User",
           fullName: "External User",
           userType: "external",
+          // Telegram specific data (for external users, use default values)
+          telegramId: null,
+          telegramUsername: null,
+          telegramFullName: "External User",
+          telegramPhotoUrl: null,
+          telegramLanguageCode: "en",
+          telegramIsPremium: false,
+          // App data
           totalEarned: 1250.00,
           totalDeposited: 500.00,
           totalWithdrawn: 200.00,
