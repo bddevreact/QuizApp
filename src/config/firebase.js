@@ -7,13 +7,13 @@ import { getAnalytics } from 'firebase/analytics'
 
 // Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBV2-mYjI6z1kR1r5ip5_SIeJywmK6Rly4",
-  authDomain: "quiz-app-81036.firebaseapp.com",
-  projectId: "quiz-app-81036",
-  storageBucket: "quiz-app-81036.firebasestorage.app",
-  messagingSenderId: "508287482023",
-  appId: "1:508287482023:web:241e8797f62f3668520382",
-  measurementId: "G-HJRN3KCCPT"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY || "AIzaSyBV2-mYjI6z1kR1r5ip5_SIeJywmK6Rly4",
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN || "quiz-app-81036.firebaseapp.com",
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID || "quiz-app-81036",
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET || "quiz-app-81036.firebasestorage.app",
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID || "508287482023",
+  appId: import.meta.env.VITE_FIREBASE_APP_ID || "1:508287482023:web:241e8797f62f3668520382",
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID || "G-HJRN3KCCPT"
 }
 
 // Initialize Firebase

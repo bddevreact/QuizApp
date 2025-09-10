@@ -92,13 +92,34 @@ A comprehensive cryptocurrency quiz application built with React, featuring bett
 
 3. **Environment Setup**
    ```bash
-   # Create .env file
-   VITE_FIREBASE_API_KEY=your_api_key
-   VITE_FIREBASE_AUTH_DOMAIN=your_auth_domain
-   VITE_FIREBASE_PROJECT_ID=your_project_id
-   VITE_FIREBASE_STORAGE_BUCKET=your_storage_bucket
-   VITE_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
-   VITE_FIREBASE_APP_ID=your_app_id
+   # Create .env file in root directory
+   VITE_FIREBASE_API_KEY=AIzaSyBV2-mYjI6z1kR1r5ip5_SIeJywmK6Rly4
+   VITE_FIREBASE_AUTH_DOMAIN=quiz-app-81036.firebaseapp.com
+   VITE_FIREBASE_PROJECT_ID=quiz-app-81036
+   VITE_FIREBASE_STORAGE_BUCKET=quiz-app-81036.firebasestorage.app
+   VITE_FIREBASE_MESSAGING_SENDER_ID=508287482023
+   VITE_FIREBASE_APP_ID=1:508287482023:web:241e8797f62f3668520382
+   VITE_FIREBASE_MEASUREMENT_ID=G-HJRN3KCCPT
+   
+   # Optional: App Configuration
+   VITE_APP_NAME=CryptoQuiz
+   VITE_APP_VERSION=1.0.0
+   VITE_APP_ENVIRONMENT=production
+   
+   # Optional: Telegram Bot Token
+   VITE_TELEGRAM_BOT_TOKEN=your_telegram_bot_token_here
+   
+   # Optional: Admin Settings
+   VITE_ADMIN_EMAIL=admin@cryptoquiz.com
+   VITE_ADMIN_PASSWORD=admin123
+   
+   # Optional: App Settings
+   VITE_MIN_DEPOSIT=10
+   VITE_MAX_DEPOSIT=10000
+   VITE_MIN_WITHDRAWAL=10
+   VITE_MAX_WITHDRAWAL=1000
+   VITE_WITHDRAWAL_FEE=2.00
+   VITE_APP_FEE_PERCENTAGE=20
    ```
 
 4. **Firebase Configuration**
