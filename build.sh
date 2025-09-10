@@ -27,16 +27,15 @@ fi
 # Check if vite is available
 echo "🔍 Checking if vite is available..."
 if ! command -v vite &> /dev/null; then
-    echo "❌ Vite not found in PATH, trying npx..."
-    if ! npx vite --version &> /dev/null; then
-        echo "❌ Vite not found even with npx!"
-        exit 1
-    fi
+    echo "❌ Vite not found in PATH, using npx..."
+    # Use npx directly for build
+    echo "🏗️ Building the application with npx..."
+    npx vite build
+else
+    echo "✅ Vite found in PATH"
+    echo "🏗️ Building the application..."
+    npm run build
 fi
-
-# Run the build
-echo "🏗️ Building the application..."
-npm run build
 
 # Check if dist directory was created
 if [ ! -d "dist" ]; then
