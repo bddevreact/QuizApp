@@ -1,6 +1,9 @@
 [build]
-  # Build command
-  command = "npm run build"
+  # Base directory (if needed)
+  base = "."
+  
+  # Build command - use build script for better error handling
+  command = "chmod +x build.sh && ./build.sh"
   
   # Directory to publish
   publish = "dist"
